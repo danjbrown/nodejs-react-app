@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-typescript",
+  "version": "1.0.0",
+  "description": "Node.js application written in TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "npx tsc --noEmit && npx tsx watch src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danjbrown/nodejs-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/danjbrown/nodejs-typescript/issues"
+  },
+  "homepage": "https://github.com/danjbrown/nodejs-typescript#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
