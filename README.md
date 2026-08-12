@@ -20,10 +20,7 @@ npm run build
 npm run start
 ```
 
-Load the application:
-```
-http://localhost:3000/api/user
-```
+Load the application at http://localhost:3000/api/user
 
 ## Docker
 
