@@ -8,7 +8,6 @@ function App() {
   const [count, setCount] = useState(0)
 
   const [username, setUsername] = useState([]);
-  const [refetch, setRefetch] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:3000/api/userdata")
