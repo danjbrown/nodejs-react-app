@@ -30,7 +30,7 @@ npm run dev:server
 
 Install:
 ```
-cd /src/server
+cd server
 npm install
 ```
 
@@ -59,7 +59,7 @@ Load the application at http://localhost:3000/api/user
 
 Install:
 ```
-cd /src/client
+cd client
 npm install
 ```
 
