@@ -6,14 +6,33 @@ dist/
 out/
 .tmp/
 .cache/
-
+ 
+# =========================================
+# Vite, Webpack, and React-specific artifacts
+# =========================================
+.vite/
+.vitepress/
+.eslintcache
+.npm/
+coverage/
+jest/
+cypress/
+cypress/screenshots/
+cypress/videos/
+reports/
+ 
 # =========================================
 # Environment and config files (sensitive)
 # =========================================
 *.env*
 !.env.production  # Allow production env file if needed
 *.log
-
+ 
+# =========================================
+# TypeScript build artifacts
+# =========================================
+*.tsbuildinfo
+ 
 # =========================================
 # Debug and lockfiles
 # =========================================
@@ -32,7 +51,7 @@ pnpm-debug.log*
 *.swp
 .DS_Store
 Thumbs.db
-
+ 
 # =========================================
 # Docker-related files
 # =========================================
