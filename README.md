@@ -87,8 +87,7 @@ docker run -p 5173:5173 nodejs-typescript-client
 ## References
 
 https://nodejs.org/api/typescript.html
-https://nodejs.org/learn/typescript/introduction
 
-https://medium.com/@robinviktorsson/containerizing-a-typescript-node-js-application-with-docker-a-step-by-step-guide-be7fc87191f8
+https://nodejs.org/learn/typescript/introduction
 
 https://www.docker.com/blog/how-to-dockerize-react-app/
