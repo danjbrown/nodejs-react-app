@@ -1,19 +1,30 @@
-# nodejs-typescript
+# nodejs-react-app
 
 Node.js and React applications written in TypeScript, run using docker compose.
 
-## Build and run
+## Build and run using docker
 
 Clone the repository.
 
-Builds and run using docker compose:
+Build and run using docker compose:
 ```
-docker compose up --build
+docker compose -f docker-compose-dev.yml up --build
 ```
+
+Use the `docker-compose-dev.yml` file for production builds.
 
 Load the Node.js server application at http://localhost:3000/api/user
 
 Load the React.js client at http://localhost:5173
+
+## Development mode
+
+Install the dependencies and run from the project root:
+```
+npm run install
+npm run dev:client
+npm run dev:server
+```
 
 ## Server application: development mode
 
