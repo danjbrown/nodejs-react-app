@@ -2,8 +2,8 @@
   "name": "nodesjs-react-app",
   "version": "1.0.0",
   "scripts": {
-    "install": "cd src/client && npm install && cd ../server && npm install",
-    "dev:server": "cd src/server && npm run dev",
-    "dev:client": "cd src/client && npm run dev"
+    "install": "cd client && npm install && cd ../server && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev"
   }
 }
