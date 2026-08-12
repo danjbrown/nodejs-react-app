@@ -15,7 +15,7 @@ Use the `docker-compose-prod.yml` file for production builds.
 
 Load the Node.js server application at (for example) http://localhost:3000/api/user
 
-Load the React.js client application at http://localhost:5173
+Load the React client application at http://localhost:5173
 
 ## Development mode
 
