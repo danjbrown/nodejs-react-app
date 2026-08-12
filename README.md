@@ -1,6 +1,6 @@
 # nodejs-react-app
 
-Node.js and React applications written in TypeScript, run using docker compose.
+Node.js server and React client applications in a sinle repository.
 
 ## Build and run using docker
 
@@ -11,15 +11,15 @@ Build and run using docker compose:
 docker compose -f docker-compose-dev.yml up --build
 ```
 
-Use the `docker-compose-dev.yml` file for production builds.
+Use the `docker-compose-prod.yml` file for production builds.
 
-Load the Node.js server application at http://localhost:3000/api/user
+Load the Node.js server application at (for example) http://localhost:3000/api/user
 
-Load the React.js client at http://localhost:5173
+Load the React.js client application at http://localhost:5173
 
 ## Development mode
 
-Install the dependencies and run from the project root:
+Install the dependencies and run from the project root, or follow the instructions below with separate docker build steps:
 ```
 npm run install
 npm run dev:client
