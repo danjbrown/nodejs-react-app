@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "esnext", // Uses the latest ECMAScript features for modern JavaScript support
     "module": "nodenext", // Configures Node.js to use ESM module system
-    "rootDir": ".", // Specifies the source directory for your code
+    "rootDir": "src", // Specifies the source directory for your code
     "outDir": "dist", // Specifies the output directory for compiled files
     "sourceMap": true, // Enables source maps for easier debugging
 
@@ -19,8 +19,12 @@
 		"esModuleInterop": true,
 
 		// Disallow features that require cross-file awareness
-		"isolatedModules": true
+		"isolatedModules": true,
+
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["."], // Includes the `src` directory in the project
+  "include": ["src"], // Includes the `src` directory in the project
   "exclude": ["node_modules", "dist"] // Excludes `node_modules` and `dist` directories from the project
 }

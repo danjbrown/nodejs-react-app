@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx tsc",
     "start": "node dist/index.js",
-    "dev": "npx tsc --noEmit && npx tsx watch index.ts",
+    "dev": "npx tsc --noEmit && npx tsx watch src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
