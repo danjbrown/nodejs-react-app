@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Adds headers: Access-Control-Allow-Origin: *
-app.use(cors());
+// app.use(cors());
 
 app.use('/api', UserRoutes);
 
