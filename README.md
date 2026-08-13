@@ -19,11 +19,10 @@ Load the React client application at http://localhost:5173
 
 ## Development mode
 
-Install the dependencies and run from the project root, or follow the instructions below with separate docker build steps:
+Install and run the client and server applications with hot reloading enabled:
 ```
 npm run install
-npm run dev:client
-npm run dev:server
+npm run dev
 ```
 
 ## Server application: development mode

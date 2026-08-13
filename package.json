@@ -2,8 +2,12 @@
   "name": "nodesjs-react-app",
   "version": "1.0.0",
   "scripts": {
-    "install": "cd client && npm install && cd ../server && npm install",
-    "dev:server": "cd server && npm run dev",
-    "dev:client": "cd client && npm run dev"
+    "install": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev:server": "cd server && npm run dev && cd ../client && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently --kill-others \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.4"
   }
 }

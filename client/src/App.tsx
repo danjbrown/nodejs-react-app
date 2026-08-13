@@ -10,7 +10,7 @@ function App() {
   const [username, setUsername] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/userdata")
+    fetch(`${import.meta.env.VITE_API_URL}/api/userdata`)
       .then((data) => data.json())
       .then((data) => {
         setUsername(data.username);
