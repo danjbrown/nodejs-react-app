@@ -3,7 +3,7 @@ import { IUser } from '../interfaces/user-interface.js';
 export class User implements IUser {
   public constructor(readonly username: string, readonly email: string) {}
 
-  public getName(): string {
+  public getUsername(): string {
     return this.username;
   }
 
