@@ -48,8 +48,8 @@ npm run start
 
 Build and run the docker container:
 ```
-docker build -t nodejs-typescript-server .
-docker run -p 3000:3000 nodejs-typescript-server
+docker build -t nodejs-react-app-server .
+docker run -p 3000:3000 nodejs-react-app-server
 ```
 
 Load the application at http://localhost:3000/api/user
@@ -79,8 +79,8 @@ Load the application at http://localhost:5173
 
 Build and run the docker container:
 ```
-docker build -t nodejs-typescript-client .
-docker run -p 5173:5173 nodejs-typescript-client
+docker build -t nodejs-react-app-client .
+docker run -p 5173:5173 nodejs-react-app-client
 ```
 
 ## Unit Testing
