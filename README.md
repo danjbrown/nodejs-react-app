@@ -96,7 +96,7 @@ Get the test code coverage:
 ### Server
 
 Run the server unit tests with the following command:  
-```node --experimental-vm-modules ./node_modules/.bin/jest```
+```npm run test``
 
 Jest ships with experimental support for ECMAScript Modules (ESM), see:
 https://jestjs.io/docs/ecmascript-modules
