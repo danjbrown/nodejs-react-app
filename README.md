@@ -83,6 +83,14 @@ docker build -t nodejs-typescript-client .
 docker run -p 5173:5173 nodejs-typescript-client
 ```
 
+## Unit Testing
+
+Run the server unit tests with the following command:  
+```node --experimental-vm-modules ./node_modules/.bin/jest```
+
+Jest ships with experimental support for ECMAScript Modules (ESM), see:
+https://jestjs.io/docs/ecmascript-modules
+
 ## References
 
 https://nodejs.org/api/typescript.html

@@ -23,8 +23,9 @@
 
     "strict": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["jest"]
   },
-  "include": ["src"], // Includes the `src` directory in the project
+  "include": ["src", "src/**/*.ts", "tests/**/*.test.ts"], // Includes the `src` directory in the project
   "exclude": ["node_modules", "dist"] // Excludes `node_modules` and `dist` directories from the project
 }
