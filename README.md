@@ -85,6 +85,16 @@ docker run -p 5173:5173 nodejs-typescript-client
 
 ## Unit Testing
 
+### Client
+
+Run the client unit tests with the following command:  
+```npm run test```
+
+Get the test code coverage:  
+```npm run test:coverage```
+
+### Server
+
 Run the server unit tests with the following command:  
 ```node --experimental-vm-modules ./node_modules/.bin/jest```
 

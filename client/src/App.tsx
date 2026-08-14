@@ -14,7 +14,8 @@ function App() {
       .then((data) => data.json())
       .then((data) => {
         setUsername(data.username);
-      });
+      })
+      .catch((error) => {console.error(error)});
   });
 
   return (
