@@ -1,6 +1,6 @@
 # nodejs-react-app
 
-A Node.js server written in TypeScript and a React client application in a single repository.
+React client and Node.js server applications in a single repository.
 
 ## Build and run using docker
 
