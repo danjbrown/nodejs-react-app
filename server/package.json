@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/danjbrown/nodejs-typescript#readme",
   "devDependencies": {
-    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-env": "^7.0.0",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/jest": "^30.0.0",
