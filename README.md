@@ -114,6 +114,19 @@ Run the server unit tests with the following command:
 Jest ships with experimental support for ECMAScript Modules (ESM), see:
 https://jestjs.io/docs/ecmascript-modules
 
+## Deploy to ECS
+
+Build and run the docker image locally:
+```
+cd client
+docker build -t nodejs-react-app-prod . -f Dockerfile.prod
+
+## Very important to build the app on MacOS for linux/amd64 otherwise you will see manifest mismatch errors in the pod logs:
+docker build --platform linux/amd64,linux/arm64 -t nodejs-react-app-prod . -f Dockerfile.prod
+
+docker run -t -i -p 80:5173 nodejs-react-app-prod
+```
+
 ## References
 
 https://nodejs.org/api/typescript.html
