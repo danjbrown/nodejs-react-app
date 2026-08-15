@@ -2,7 +2,9 @@
 
 React client and Node.js server applications in a single repository.
 
-## Build and run using docker
+## Build and run using docker compose
+
+### Development
 
 Clone the repository.
 
@@ -11,7 +13,18 @@ Build and run using docker compose:
 docker compose -f docker-compose-dev.yml up --build
 ```
 
-Use the `docker-compose-prod.yml` file for production builds.
+Load the Node.js server application at (for example) http://localhost:3000/api/user
+
+Load the React client application at http://localhost:5173
+
+### Production
+
+Use the `docker-compose-prod.yml` file for production builds, which uses nginx exposing port 80. Port 80 is mapped to 5173 in the docker compose file.
+
+Build and run using docker compose:
+```
+docker compose -f docker-compose-prod.yml up --build
+```
 
 Load the Node.js server application at (for example) http://localhost:3000/api/user
 

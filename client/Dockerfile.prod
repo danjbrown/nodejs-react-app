@@ -6,12 +6,21 @@ COPY package.json .
 
 RUN npm install
 
-RUN npm i -g serve
+# RUN npm i -g serve
 
 COPY . .
 
 RUN npm run build
 
-EXPOSE 5173
+# EXPOSE 5173
+# CMD [ "serve", "-s", "dist", "-p", "5173" ]
 
-CMD [ "serve", "-s", "dist", "-p", "5173" ]
+# Use an nginx server to serve the built app
+FROM nginx:alpine
+COPY --from=0 /app/dist /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
