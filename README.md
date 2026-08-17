@@ -115,7 +115,6 @@ Run the server unit tests with the following command:
 
 Jest ships with experimental support for ECMAScript Modules (ESM), see:
 https://jestjs.io/docs/ecmascript-modules
-```
 
 ## References
 
