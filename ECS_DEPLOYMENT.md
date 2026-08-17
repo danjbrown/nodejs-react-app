@@ -45,7 +45,7 @@ docker push <aws-account-id>.dkr.ecr.us-east-1.amazonaws.com/nodejs-react-server
 
 ## Create the ECS
 
-Open the AWS UI and create a new ECS in Express Mode:
+Open the AWS management console and create a new ECS in Express Mode:
 
 1. Specify ECR image URI using the `repositoryUri` above, appending the image tag 'latest'.
 2. Change the port from 80 to 3000.
@@ -99,7 +99,7 @@ docker push <aws-account-id>.dkr.ecr.us-east-1.amazonaws.com/nodejs-react-client
 
 ## Create the ECS
 
-Open the AWS UI and create a new ECS in Express Mode:
+Open the AWS management console and create a new ECS in Express Mode:
 
 1. Specify ECR image URI using the `repositoryUri` above.
 2. Leave the default port as 80.
@@ -113,6 +113,6 @@ You should see the greeting "Get started, Test User" which includes data "Test U
 
 ## Delete services
 
-1. Delete the ECS services via the UI.
-2. Delete the ECR repositories via the UI.
+1. Delete the ECS services via the management console.
+2. Delete the ECR repositories via the management console.
 3. Delete any Cloudwatch Alarms or Dashboards.
