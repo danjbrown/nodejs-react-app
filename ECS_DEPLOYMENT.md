@@ -2,6 +2,8 @@
 
 Follow these steps to deploy the application to ECS.
 
+Follow the 'Delete services' section at the end to ensure no unintended costs are incurred. 
+
 ## Authenticate to AWS
 ```
 aws configure
@@ -113,3 +115,4 @@ You should see the greeting "Get started, Test User" which includes data "Test U
 
 1. Delete the ECS services via the UI.
 2. Delete the ECR repositories via the UI.
+3. Delete any Cloudwatch Alarms or Dashboards.
