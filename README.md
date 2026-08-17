@@ -2,6 +2,8 @@
 
 React client and Node.js server applications in a single repository.
 
+See the ECS_DEPLOYMENT.md file for instructions on how to deploy the application using AWS Elastic Container Service (ECS).
+
 ## Build and run using docker compose
 
 ### Development
@@ -113,6 +115,7 @@ Run the server unit tests with the following command:
 
 Jest ships with experimental support for ECMAScript Modules (ESM), see:
 https://jestjs.io/docs/ecmascript-modules
+```
 
 ## References
 
