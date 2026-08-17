@@ -1,8 +1,8 @@
 # Deploying the application using AWS Elastic Container Service (ECS)
 
-Follow these steps to deploy the application to ECS.
+Follow these steps to deploy the application using ECS.
 
-Follow the 'Delete services' section at the end to ensure no unintended costs are incurred. 
+Follow the [Delete services](#delete-services) section to ensure no unintended costs are incurred. 
 
 ## Authenticate to AWS
 ```
