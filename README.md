@@ -2,7 +2,7 @@
 
 React client and Node.js server applications in a single repository.
 
-See the ECS_DEPLOYMENT.md file for instructions on how to deploy the application using AWS Elastic Container Service (ECS).
+Instructions for deploying the applications using AWS Elastic Container Service (ECS) are provided in the ECS_DEPLOYMENT.md file.
 
 ## Build and run using docker compose
 
