@@ -1,7 +1,7 @@
 {
   "name": "nodejs-typescript",
   "version": "1.0.0",
-  "description": "Node.js application written in TypeScript.",
+  "description": "React client and Node.js server applications in a single repository.",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
