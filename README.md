@@ -19,7 +19,7 @@ Load the React client application at http://localhost:5173
 
 ### Production
 
-Use the `docker-compose-prod.yml` file for production builds, which uses nginx exposing port 80. Port 80 is mapped to 5173 in the docker compose file.
+Use the `docker-compose-prod.yml` file for production builds, which uses nginx exposing port 80. Port 80 is mapped in the docker compose file.
 
 Build and run using docker compose:
 ```
@@ -28,7 +28,7 @@ docker compose -f docker-compose-prod.yml up --build
 
 Load the Node.js server application at (for example) http://localhost:3000/api/user
 
-Load the React client application at http://localhost:5173
+Load the React client application at http://localhost:80
 
 ## Development mode
 
@@ -119,12 +119,12 @@ https://jestjs.io/docs/ecmascript-modules
 Build and run the docker image locally:
 ```
 cd client
-docker build -t nodejs-react-app-prod . -f Dockerfile.prod
+docker build -t nodejs-react-app-client-prod . -f Dockerfile.prod
 
 ## Very important to build the app on MacOS for linux/amd64 otherwise you will see manifest mismatch errors in the pod logs:
-docker build --platform linux/amd64,linux/arm64 -t nodejs-react-app-prod . -f Dockerfile.prod
+docker build --platform linux/amd64,linux/arm64 -t nodejs-react-app-client-prod . -f Dockerfile.prod
 
-docker run -t -i -p 80:5173 nodejs-react-app-prod
+docker run -t -i -p 80:80 nodejs-react-app-client-prod
 ```
 
 ## References
