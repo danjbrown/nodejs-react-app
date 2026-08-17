@@ -105,7 +105,7 @@ Open the AWS UI and create a new ECS in Express Mode:
 
 This will create the task definition, security group, and initialise the deployment.
 
-Load the deployed application using the Application URL in the ECS overview UI. 
+Once finalised, load the deployed application using the Application URL in the ECS overview UI. 
 
 You should see the greeting "Get started, Test User" which includes data "Test User" loaded from the ECS server created above.
 
