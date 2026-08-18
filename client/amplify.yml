@@ -4,12 +4,12 @@ applications:
       phases:
         preBuild:
           commands:
-            - nvm install 22.22.2
-            - nvm use 22.22.2
+            - nvm install 26.5.0
+            - nvm use 26.5.0
             - node -v
         build:
           commands:
-            - npm i
+            - npm install
             - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
     frontend:
       phases:
