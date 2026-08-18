@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "cd client && npm install && cd ../server && npm install",
-    "dev:server": "cd server && npm run dev && cd ../client && npm run dev",
+    "dev:server": "cd server && npm run dev",
     "dev:client": "cd client && npm run dev",
     "dev": "concurrently --kill-others \"npm run dev:server\" \"npm run dev:client\""
   },
