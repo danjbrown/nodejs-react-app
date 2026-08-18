@@ -1,6 +1,6 @@
 # nodejs-react-app
 
-React client and Node.js server applications in a single repository.
+React client and Node.js server applications in a monorepo.
 
 Instructions for deploying the applications using AWS Elastic Container Service (ECS) are provided in the ECS_DEPLOYMENT.md file.
 
