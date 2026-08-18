@@ -4,6 +4,10 @@ React client and Node.js server applications in a monorepo.
 
 Instructions for deploying the applications using AWS Elastic Container Service (ECS) are provided in the ECS_DEPLOYMENT.md file.
 
+A branch for deploying the client application using AWS Amplify instead of ECS with nginx can be found at [feat/aws-amplify](https://github.com/danjbrown/nodejs-react-app/feat/aws-amplify)
+
+See detailed instructions [here](https://github.com/danjbrown/nodejs-react-app/blob/feat/aws-amplify/AWS_AMPLIFY.md)
+
 ## Build and run using docker compose
 
 ### Development
